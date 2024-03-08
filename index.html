@@ -12,27 +12,29 @@
 
     <h2>Арифметическая производная</h2>
 
-    <form>
-        <div class="variables">
-            <label for="m_z">m = </label><input type="text" id="m_z">
-            <br/>
-            <div>D (m) = <p id="derivative_m"></p> </div>
-            <input type="button" value="Рассчитать" onclick="document.getElementById('derivative_m').innerText = derivativeZ(document.getElementById('m_z').value)">
-        </div>
-    </form>
+    <div>
+        <form>
+            <div class="variables">
+                <label for="m_z">m = </label><input type="number" value="1" min="-5000000" max="5000000" id="m_z">
+                <br/>
+                <p>D (m) = <span id="derivative_m"></span></p>
+                <input type="button" value="Рассчитать" onclick="document.getElementById('derivative_m').innerText = derivativeZ(document.getElementById('m_z').value)">
+            </div>
+        </form>
 
-    <br/>
+        <br/>
 
-    <form>
-        <div class="variables">
-            <label for="m_q">m = </label><input type="text" id="m_q">
-            <br/>
-            <label for="n_q">n = </label><input type="text" id="n_q">
-            <br/>
-            <div>D (m / n) = <p id="derivative_m_n"></p> </div>
-            <input type="button" value="Рассчитать" onclick="document.getElementById('derivative_m_n').innerText = derivativeQ(document.getElementById('m_q').value, document.getElementById('n_q').value)">
-        </div>
-    </form>
+        <form>
+            <div class="variables">
+                <label for="m_q">m = </label><input type="number" value="1" min="-5000000" max="5000000" id="m_q">
+                <br/>
+                <label for="n_q">n = </label><input type="number" value="1" min="-5000000" max="5000000" id="n_q">
+                <br/>
+                <p>D (m / n) = <span id="derivative_m_n"></span></p>
+                <input type="button" value="Рассчитать" onclick="document.getElementById('derivative_m_n').innerText = derivativeQ(document.getElementById('m_q').value, document.getElementById('n_q').value)">
+            </div>
+        </form>
+    </div>
 
     <div class="bottom">
         <p>Сайт основан на задаче ТЮМа, 2024 год, №6</p>
