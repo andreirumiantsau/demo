@@ -1,36 +1,89 @@
 body {
     margin: 0px;
     padding: 15px;
-    background: linear-gradient(to bottom right, rgb(167, 161, 255), rgb(0, 14, 95));
+    background-color: #FFF8DC;
 }
 
-.bottom {
-    font-size: 10pt;
-    color: rgb(0, 0, 0);
-    margin-top: 29%;
+.title {
+    text-align: center;
 }
 
-input {
-    width: 100px;
-    margin: 5px;
-}
-
-.variables {
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid;
-    width: 12%;
-}
-
-h2 {
-    margin-left: 5%;
-}
-
-img {
+/* for index.html */
+.help {
     height: 30px;
     width: 30px;
     margin: 5px;
     float: right;
+}
+
+.conditions {
+    margin-top: -29px;
+    margin-right: 15%;
+    float: right;
+    height: 205.3px;
+    width: 328px;
+    border: black solid 2px;
+}
+
+input {
+    margin: 5px;
+}
+
+.button {
+    background-color: rgb(219, 219, 219);
+    border-radius: 5%;
+    text-align: center;
+    padding: 3px;
+    margin: 0px;
+}
+
+.variables {
+    border: black solid 1px;
+    padding: 15px;
+    display: block;
+    margin: 10px;
+}
+
+.rational {
+    float: left;
+    margin-top: -9px;
+}
+
+.integer {
+    float: left;
+}
+
+.contain {
+    overflow: hidden;
+}
+
+#m_q {
+    margin-left: 0.5px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.numbersWithSameDerivative {
+    border: rgb(0, 19, 75) solid 2px;
+    padding: 15px;
+    display: block;
+    margin: 10px;
+    float: left;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.color3b {
+    font-weight: 700;
+    color: rgb(0, 10, 41);
+}
+
+/* for help.html */
+li {
+   margin-left: 15px;
 }
